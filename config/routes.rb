@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
 
   devise_for :users
+
+  resources :forums do
+    resources :posts, module: :forums
+  end
+
   root "welcome#index"
 end
