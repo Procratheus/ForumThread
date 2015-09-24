@@ -3,7 +3,8 @@ class ForumsController < ApplicationController
   before_action :set_forum, except: [:index, :new, :create]
 
   def index
-    @forums = Forum.all
+    @q = Forum.ransack(params[:q])
+    @forums = @q.result
   end
 
   def show

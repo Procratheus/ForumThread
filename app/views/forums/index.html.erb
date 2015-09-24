@@ -1,1 +1,13 @@
+<div class="container">
+  <div class="row">
+    <%= search_form_for @q do |f| %>
+      <%= f.search_field :title_or_posts_body_cont, placeholder: "search", rows: 8 %>
+    <% end %>
+  </div>
+  <div class="row">
+    <% @forums.each do |forum| %>
+      <h1><%= forum.title %></h1>
+    <% end %>
+  </div>
 
+</div>

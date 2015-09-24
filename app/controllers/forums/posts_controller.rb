@@ -12,6 +12,7 @@ class Forums::PostsController < ApplicationController
     @post.user_id = current_user.id
 
     if @post.save
+      @post.send_notifications!
       redirect_to forum_path(@forum, anchor: "post_#{@post.id}")
     else
       render :new
