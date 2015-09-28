@@ -15,6 +15,7 @@ gem 'devise', '~> 3.5.1'
 gem 'ransack', '~> 1.7.0'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sucker_punch', '~> 1.5.1'
+gem 'local_time', '~> 1.0.3'
 
 group :development do
   gem 'better_errors', '~> 2.1.1'
@@ -43,6 +44,3 @@ end
 group :production do
   gem 'rails_12factor', '~> 0.0.3'
 end
-
-
-
