@@ -6,7 +6,7 @@
   <div class="row">
     <% @forum.posts.each do |post| %>
       <%= div_for post do %>
-        <h5><%= post.body %></h5>
+        <h5><%= markdownify(post.body) %></h5>
         <h6>created by: <%= post.user.email %> and created_at: <%= local_time_ago(post.created_at) %></h6>
       <% end %>
     <% end %>

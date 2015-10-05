@@ -16,6 +16,9 @@ gem 'ransack', '~> 1.7.0'
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sucker_punch', '~> 1.5.1'
 gem 'local_time', '~> 1.0.3'
+gem 'html-pipeline', '~> 2.2.1'
+gem 'sanitize', '~> 4.0.0'
+gem 'github-markdown', '~> 0.6.9'
 
 group :development do
   gem 'better_errors', '~> 2.1.1'
